@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1280
     height: 637.3334
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Hierarchy
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -44,11 +44,11 @@ MonoBehaviour:
     x: 0
     y: 30
     width: 1280
-    height: 587.3334
+    height: 587.3333
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 148
+  controlID: 20
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -67,9 +67,9 @@ MonoBehaviour:
     x: 978
     y: 0
     width: 302
-    height: 587.3334
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+    height: 587.3333
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -112,7 +112,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ConsoleWindow
+  m_Name: ProjectBrowser
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -120,15 +120,15 @@ MonoBehaviour:
     x: 0
     y: 378.66666
     width: 978
-    height: 208.66672
-  m_MinSize: {x: 101, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 17}
+    height: 208.66666
+  m_MinSize: {x: 231, y: 271}
+  m_MaxSize: {x: 10001, y: 10021}
+  m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
   - {fileID: 17}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -150,7 +150,7 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 1280
-    height: 637.3334
+    height: 637.3333
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
@@ -195,7 +195,7 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 617.3334
+    y: 617.3333
     width: 1280
     height: 20
   m_MinSize: {x: 0, y: 0}
@@ -220,11 +220,11 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 978
-    height: 587.3334
+    height: 587.3333
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 43
+  controlID: 21
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -249,7 +249,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 44
+  controlID: 22
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -305,14 +305,14 @@ MonoBehaviour:
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
-  progressMessageClearTime: -1
+  progressMessageClearTime: 2102.72453
   notificationClearTime: -1
   timeSinceLastRotation: -1
   currentBranchAndRemoteHasUpdate: 0
-  currentTrackingStatusHasUpdate: 1
-  currentStatusEntriesHasUpdate: 1
-  repositoryProgressHasUpdate: 1
-  appManagerProgressHasUpdate: 1
+  currentTrackingStatusHasUpdate: 0
+  currentStatusEntriesHasUpdate: 0
+  repositoryProgressHasUpdate: 0
+  appManagerProgressHasUpdate: 0
   changeTab: 3
   activeTab: 3
   initProjectView:
@@ -383,10 +383,21 @@ MonoBehaviour:
       folders:
         keys:
         - Remote branches
+        - origin
         values:
         - path: Remote branches
           label: Remote branches
           level: 0
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 0
+          checkState: 0
+        - path: origin
+          label: origin
+          level: 1
           isFolder: 1
           isContainer: 0
           isCollapsed: 0
@@ -413,6 +424,26 @@ MonoBehaviour:
         isActive: 0
         treeIsCheckable: 0
         checkState: 0
+      - path: origin
+        label: origin
+        level: 1
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+      - path: origin/master
+        label: master
+        level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
       selectedNode:
         path: Remote branches
         label: Remote branches
@@ -430,17 +461,17 @@ MonoBehaviour:
     disableDelete: 1
     disableCreate: 1
     lastLocalAndRemoteBranchListChangedEvent:
-      updatedTimeString: 2023-01-03T10:56:55.987+01:00
+      updatedTimeString: 2023-01-08T09:07:59.573+01:00
       cacheType: 2
     lastCurrentBranchAndRemoteChange:
-      updatedTimeString: 2023-01-03T10:56:40.737+01:00
+      updatedTimeString: 2023-01-08T09:07:55.862+01:00
       cacheType: 1
     currentBranch:
       name: master
-      tracking: 
+      tracking: origin/master
     currentRemote:
-      name: 
-      url: 
+      name: origin
+      url: https://github.com/paufeixa/Empareja_y_Despeja.git
       login: 
       user: 
       host: 
@@ -448,12 +479,14 @@ MonoBehaviour:
       token: 
     localBranches:
     - name: master
-      tracking: 
-    remoteBranches: []
+      tracking: origin/master
+    remoteBranches:
+    - name: origin/master
+      tracking: '[None]'
   changesView:
-    currentBranchHasUpdate: 1
-    currentStatusEntriesHasUpdate: 1
-    currentLocksHasUpdate: 1
+    currentBranchHasUpdate: 0
+    currentStatusEntriesHasUpdate: 0
+    currentLocksHasUpdate: 0
     commitBody: 
     commitMessage: 
     currentBranch: master
@@ -613,18 +646,510 @@ MonoBehaviour:
       workTreeStatus: 3
     changedFilesText: 1 changed file
     lastCurrentBranchChangedEvent:
-      updatedTimeString: 2023-01-05T13:49:22.804+01:00
+      updatedTimeString: 2023-01-08T11:33:15.662+01:00
       cacheType: 1
     lastStatusEntriesChangedEvent:
-      updatedTimeString: 2023-01-05T14:23:28.807+01:00
+      updatedTimeString: 2023-01-08T11:33:18.632+01:00
       cacheType: 6
     lastLocksChangedEvent:
-      updatedTimeString: 2023-01-05T14:23:29.178+01:00
+      updatedTimeString: 0001-01-01T00:00:00.000+00:00
       cacheType: 7
   historyView:
     currentLogHasUpdate: 0
     currentTrackingStatusHasUpdate: 0
     logEntries:
+    - commitID: 7c040b7d9c19e12aed15f1c847e188d0b92d5f4f
+      mergeA: 
+      mergeB: 
+      authorName: paufeixa
+      authorEmail: paufeixa20019@gmail.com
+      commitEmail: paufeixa20019@gmail.com
+      commitName: paufeixa
+      summary: "Primera versi\xF3n funcional del juego"
+      description: 
+      timeString: 2023-01-05T19:31:12.000+01:00
+      commitTimeString: 2023-01-05T19:31:12.000+01:00
+      changes:
+      - path: Assets\Scripts\BoardManager.cs
+        fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Scripts\BoardManager.cs
+        projectPath: Assets\Scripts\BoardManager.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Scripts\GameManager.cs
+        fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Scripts\GameManager.cs
+        projectPath: Assets\Scripts\GameManager.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Scripts\ObjectClick.cs
+        fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Scripts\ObjectClick.cs
+        projectPath: Assets\Scripts\ObjectClick.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: UserSettings\Layouts\default-2021.dwlt
+        fullPath: C:\DSA\Projecte\Empareja_y_Despeja\UserSettings\Layouts\default-2021.dwlt
+        projectPath: UserSettings\Layouts\default-2021.dwlt
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+    - commitID: 972b07d51a4b8ccab6d3f6bd8d8285370ed4fdf8
+      mergeA: 
+      mergeB: 
+      authorName: paufeixa
+      authorEmail: paufeixa20019@gmail.com
+      commitEmail: paufeixa20019@gmail.com
+      commitName: paufeixa
+      summary: Cartas y escenario creados
+      description: 
+      timeString: 2023-01-04T20:24:01.000+01:00
+      commitTimeString: 2023-01-04T20:24:01.000+01:00
+      changes:
+      - path: Assets\Prefabs.meta
+        fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Prefabs.meta
+        projectPath: Assets\Prefabs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Prefabs\Card1.prefab
+        fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Prefabs\Card1.prefab
+        projectPath: Assets\Prefabs\Card1.prefab
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Prefabs\Card1.prefab.meta
+        fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Prefabs\Card1.prefab.meta
+        projectPath: Assets\Prefabs\Card1.prefab.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Prefabs\Card2.prefab
+        fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Prefabs\Card2.prefab
+        projectPath: Assets\Prefabs\Card2.prefab
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Prefabs\Card2.prefab.meta
+        fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Prefabs\Card2.prefab.meta
+        projectPath: Assets\Prefabs\Card2.prefab.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Prefabs\Card3.prefab
+        fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Prefabs\Card3.prefab
+        projectPath: Assets\Prefabs\Card3.prefab
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Prefabs\Card3.prefab.meta
+        fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Prefabs\Card3.prefab.meta
+        projectPath: Assets\Prefabs\Card3.prefab.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Prefabs\Card4.prefab
+        fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Prefabs\Card4.prefab
+        projectPath: Assets\Prefabs\Card4.prefab
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Prefabs\Card4.prefab.meta
+        fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Prefabs\Card4.prefab.meta
+        projectPath: Assets\Prefabs\Card4.prefab.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Prefabs\Card5.prefab
+        fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Prefabs\Card5.prefab
+        projectPath: Assets\Prefabs\Card5.prefab
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Prefabs\Card5.prefab.meta
+        fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Prefabs\Card5.prefab.meta
+        projectPath: Assets\Prefabs\Card5.prefab.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Prefabs\Card6.prefab
+        fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Prefabs\Card6.prefab
+        projectPath: Assets\Prefabs\Card6.prefab
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Prefabs\Card6.prefab.meta
+        fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Prefabs\Card6.prefab.meta
+        projectPath: Assets\Prefabs\Card6.prefab.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Prefabs\GameManager.prefab
+        fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Prefabs\GameManager.prefab
+        projectPath: Assets\Prefabs\GameManager.prefab
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Prefabs\GameManager.prefab.meta
+        fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Prefabs\GameManager.prefab.meta
+        projectPath: Assets\Prefabs\GameManager.prefab.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Scenes\SampleScene.unity
+        fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Scenes\SampleScene.unity
+        projectPath: Assets\Scenes\SampleScene.unity
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Scripts.meta
+        fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Scripts.meta
+        projectPath: Assets\Scripts.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Scripts\BoardManager.cs
+        fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Scripts\BoardManager.cs
+        projectPath: Assets\Scripts\BoardManager.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Scripts\BoardManager.cs.meta
+        fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Scripts\BoardManager.cs.meta
+        projectPath: Assets\Scripts\BoardManager.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Scripts\GameManager.cs
+        fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Scripts\GameManager.cs
+        projectPath: Assets\Scripts\GameManager.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Scripts\GameManager.cs.meta
+        fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Scripts\GameManager.cs.meta
+        projectPath: Assets\Scripts\GameManager.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Scripts\Loader.cs
+        fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Scripts\Loader.cs
+        projectPath: Assets\Scripts\Loader.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Scripts\Loader.cs.meta
+        fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Scripts\Loader.cs.meta
+        projectPath: Assets\Scripts\Loader.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Scripts\ObjectClick.cs
+        fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Scripts\ObjectClick.cs
+        projectPath: Assets\Scripts\ObjectClick.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Scripts\ObjectClick.cs.meta
+        fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Scripts\ObjectClick.cs.meta
+        projectPath: Assets\Scripts\ObjectClick.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Sprites.meta
+        fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Sprites.meta
+        projectPath: Assets\Sprites.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Sprites\Card1.png
+        fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Sprites\Card1.png
+        projectPath: Assets\Sprites\Card1.png
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Sprites\Card1.png.meta
+        fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Sprites\Card1.png.meta
+        projectPath: Assets\Sprites\Card1.png.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Sprites\Card2.png
+        fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Sprites\Card2.png
+        projectPath: Assets\Sprites\Card2.png
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Sprites\Card2.png.meta
+        fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Sprites\Card2.png.meta
+        projectPath: Assets\Sprites\Card2.png.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Sprites\Card3.png
+        fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Sprites\Card3.png
+        projectPath: Assets\Sprites\Card3.png
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Sprites\Card3.png.meta
+        fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Sprites\Card3.png.meta
+        projectPath: Assets\Sprites\Card3.png.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Sprites\Card4.png
+        fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Sprites\Card4.png
+        projectPath: Assets\Sprites\Card4.png
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Sprites\Card4.png.meta
+        fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Sprites\Card4.png.meta
+        projectPath: Assets\Sprites\Card4.png.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Sprites\Card5.png
+        fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Sprites\Card5.png
+        projectPath: Assets\Sprites\Card5.png
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Sprites\Card5.png.meta
+        fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Sprites\Card5.png.meta
+        projectPath: Assets\Sprites\Card5.png.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Sprites\Card6.png
+        fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Sprites\Card6.png
+        projectPath: Assets\Sprites\Card6.png
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Sprites\Card6.png.meta
+        fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Sprites\Card6.png.meta
+        projectPath: Assets\Sprites\Card6.png.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\ProjectSettings.asset
+        fullPath: C:\DSA\Projecte\Empareja_y_Despeja\ProjectSettings\ProjectSettings.asset
+        projectPath: ProjectSettings\ProjectSettings.asset
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: ProjectSettings\SceneTemplateSettings.json
+        fullPath: C:\DSA\Projecte\Empareja_y_Despeja\ProjectSettings\SceneTemplateSettings.json
+        projectPath: ProjectSettings\SceneTemplateSettings.json
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: UserSettings\Layouts\default-2021.dwlt
+        fullPath: C:\DSA\Projecte\Empareja_y_Despeja\UserSettings\Layouts\default-2021.dwlt
+        projectPath: UserSettings\Layouts\default-2021.dwlt
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+    - commitID: 534f93886557bf99f29abed4edd387fc2b7d668b
+      mergeA: 
+      mergeB: 
+      authorName: paufeixa
+      authorEmail: paufeixa20019@gmail.com
+      commitEmail: paufeixa20019@gmail.com
+      commitName: paufeixa
+      summary: Initial Commit
+      description: 
+      timeString: 2023-01-03T10:58:24.000+01:00
+      commitTimeString: 2023-01-03T10:58:24.000+01:00
+      changes:
+      - path: Assets\Scenes.meta
+        fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Scenes.meta
+        projectPath: Assets\Scenes.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Scenes\SampleScene.unity
+        fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Scenes\SampleScene.unity
+        projectPath: Assets\Scenes\SampleScene.unity
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Scenes\SampleScene.unity.meta
+        fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Scenes\SampleScene.unity.meta
+        projectPath: Assets\Scenes\SampleScene.unity.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\manifest.json
+        fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Packages\manifest.json
+        projectPath: Packages\manifest.json
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\packages-lock.json
+        fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Packages\packages-lock.json
+        projectPath: Packages\packages-lock.json
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\AudioManager.asset
+        fullPath: C:\DSA\Projecte\Empareja_y_Despeja\ProjectSettings\AudioManager.asset
+        projectPath: ProjectSettings\AudioManager.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\ClusterInputManager.asset
+        fullPath: C:\DSA\Projecte\Empareja_y_Despeja\ProjectSettings\ClusterInputManager.asset
+        projectPath: ProjectSettings\ClusterInputManager.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\DynamicsManager.asset
+        fullPath: C:\DSA\Projecte\Empareja_y_Despeja\ProjectSettings\DynamicsManager.asset
+        projectPath: ProjectSettings\DynamicsManager.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\EditorBuildSettings.asset
+        fullPath: C:\DSA\Projecte\Empareja_y_Despeja\ProjectSettings\EditorBuildSettings.asset
+        projectPath: ProjectSettings\EditorBuildSettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\EditorSettings.asset
+        fullPath: C:\DSA\Projecte\Empareja_y_Despeja\ProjectSettings\EditorSettings.asset
+        projectPath: ProjectSettings\EditorSettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\GraphicsSettings.asset
+        fullPath: C:\DSA\Projecte\Empareja_y_Despeja\ProjectSettings\GraphicsSettings.asset
+        projectPath: ProjectSettings\GraphicsSettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\InputManager.asset
+        fullPath: C:\DSA\Projecte\Empareja_y_Despeja\ProjectSettings\InputManager.asset
+        projectPath: ProjectSettings\InputManager.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\MemorySettings.asset
+        fullPath: C:\DSA\Projecte\Empareja_y_Despeja\ProjectSettings\MemorySettings.asset
+        projectPath: ProjectSettings\MemorySettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\NavMeshAreas.asset
+        fullPath: C:\DSA\Projecte\Empareja_y_Despeja\ProjectSettings\NavMeshAreas.asset
+        projectPath: ProjectSettings\NavMeshAreas.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\NetworkManager.asset
+        fullPath: C:\DSA\Projecte\Empareja_y_Despeja\ProjectSettings\NetworkManager.asset
+        projectPath: ProjectSettings\NetworkManager.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\PackageManagerSettings.asset
+        fullPath: C:\DSA\Projecte\Empareja_y_Despeja\ProjectSettings\PackageManagerSettings.asset
+        projectPath: ProjectSettings\PackageManagerSettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\Physics2DSettings.asset
+        fullPath: C:\DSA\Projecte\Empareja_y_Despeja\ProjectSettings\Physics2DSettings.asset
+        projectPath: ProjectSettings\Physics2DSettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\PresetManager.asset
+        fullPath: C:\DSA\Projecte\Empareja_y_Despeja\ProjectSettings\PresetManager.asset
+        projectPath: ProjectSettings\PresetManager.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\ProjectSettings.asset
+        fullPath: C:\DSA\Projecte\Empareja_y_Despeja\ProjectSettings\ProjectSettings.asset
+        projectPath: ProjectSettings\ProjectSettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\ProjectVersion.txt
+        fullPath: C:\DSA\Projecte\Empareja_y_Despeja\ProjectSettings\ProjectVersion.txt
+        projectPath: ProjectSettings\ProjectVersion.txt
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\QualitySettings.asset
+        fullPath: C:\DSA\Projecte\Empareja_y_Despeja\ProjectSettings\QualitySettings.asset
+        projectPath: ProjectSettings\QualitySettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\TagManager.asset
+        fullPath: C:\DSA\Projecte\Empareja_y_Despeja\ProjectSettings\TagManager.asset
+        projectPath: ProjectSettings\TagManager.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\TimeManager.asset
+        fullPath: C:\DSA\Projecte\Empareja_y_Despeja\ProjectSettings\TimeManager.asset
+        projectPath: ProjectSettings\TimeManager.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\UnityConnectSettings.asset
+        fullPath: C:\DSA\Projecte\Empareja_y_Despeja\ProjectSettings\UnityConnectSettings.asset
+        projectPath: ProjectSettings\UnityConnectSettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\VFXManager.asset
+        fullPath: C:\DSA\Projecte\Empareja_y_Despeja\ProjectSettings\VFXManager.asset
+        projectPath: ProjectSettings\VFXManager.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\VersionControlSettings.asset
+        fullPath: C:\DSA\Projecte\Empareja_y_Despeja\ProjectSettings\VersionControlSettings.asset
+        projectPath: ProjectSettings\VersionControlSettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\XRSettings.asset
+        fullPath: C:\DSA\Projecte\Empareja_y_Despeja\ProjectSettings\XRSettings.asset
+        projectPath: ProjectSettings\XRSettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\boot.config
+        fullPath: C:\DSA\Projecte\Empareja_y_Despeja\ProjectSettings\boot.config
+        projectPath: ProjectSettings\boot.config
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: UserSettings\EditorUserSettings.asset
+        fullPath: C:\DSA\Projecte\Empareja_y_Despeja\UserSettings\EditorUserSettings.asset
+        projectPath: UserSettings\EditorUserSettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: UserSettings\Layouts\default-2021.dwlt
+        fullPath: C:\DSA\Projecte\Empareja_y_Despeja\UserSettings\Layouts\default-2021.dwlt
+        projectPath: UserSettings\Layouts\default-2021.dwlt
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: UserSettings\Search.settings
+        fullPath: C:\DSA\Projecte\Empareja_y_Despeja\UserSettings\Search.settings
+        projectPath: UserSettings\Search.settings
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
     - commitID: e2ee5de737558b13c5f5c59205e2410822f130ab
       mergeA: 
       mergeB: 
@@ -657,14 +1182,506 @@ MonoBehaviour:
         workTreeStatus: 0
     statusAhead: 0
     lastLogChangedEvent:
-      updatedTimeString: 2023-01-03T10:56:40.924+01:00
+      updatedTimeString: 2023-01-05T19:31:29.383+01:00
       cacheType: 3
     lastTrackingStatusChangedEvent:
-      updatedTimeString: 2023-01-03T10:56:40.599+01:00
+      updatedTimeString: 2023-01-05T19:31:29.265+01:00
       cacheType: 5
     historyControl:
       scroll: {x: 0, y: 0}
       entries:
+      - commitID: 7c040b7d9c19e12aed15f1c847e188d0b92d5f4f
+        mergeA: 
+        mergeB: 
+        authorName: paufeixa
+        authorEmail: paufeixa20019@gmail.com
+        commitEmail: paufeixa20019@gmail.com
+        commitName: paufeixa
+        summary: "Primera versi\xF3n funcional del juego"
+        description: 
+        timeString: 2023-01-05T19:31:12.000+01:00
+        commitTimeString: 2023-01-05T19:31:12.000+01:00
+        changes:
+        - path: Assets\Scripts\BoardManager.cs
+          fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Scripts\BoardManager.cs
+          projectPath: Assets\Scripts\BoardManager.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Scripts\GameManager.cs
+          fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Scripts\GameManager.cs
+          projectPath: Assets\Scripts\GameManager.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Scripts\ObjectClick.cs
+          fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Scripts\ObjectClick.cs
+          projectPath: Assets\Scripts\ObjectClick.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: UserSettings\Layouts\default-2021.dwlt
+          fullPath: C:\DSA\Projecte\Empareja_y_Despeja\UserSettings\Layouts\default-2021.dwlt
+          projectPath: UserSettings\Layouts\default-2021.dwlt
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+      - commitID: 972b07d51a4b8ccab6d3f6bd8d8285370ed4fdf8
+        mergeA: 
+        mergeB: 
+        authorName: paufeixa
+        authorEmail: paufeixa20019@gmail.com
+        commitEmail: paufeixa20019@gmail.com
+        commitName: paufeixa
+        summary: Cartas y escenario creados
+        description: 
+        timeString: 2023-01-04T20:24:01.000+01:00
+        commitTimeString: 2023-01-04T20:24:01.000+01:00
+        changes:
+        - path: Assets\Prefabs.meta
+          fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Prefabs.meta
+          projectPath: Assets\Prefabs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Prefabs\Card1.prefab
+          fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Prefabs\Card1.prefab
+          projectPath: Assets\Prefabs\Card1.prefab
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Prefabs\Card1.prefab.meta
+          fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Prefabs\Card1.prefab.meta
+          projectPath: Assets\Prefabs\Card1.prefab.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Prefabs\Card2.prefab
+          fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Prefabs\Card2.prefab
+          projectPath: Assets\Prefabs\Card2.prefab
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Prefabs\Card2.prefab.meta
+          fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Prefabs\Card2.prefab.meta
+          projectPath: Assets\Prefabs\Card2.prefab.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Prefabs\Card3.prefab
+          fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Prefabs\Card3.prefab
+          projectPath: Assets\Prefabs\Card3.prefab
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Prefabs\Card3.prefab.meta
+          fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Prefabs\Card3.prefab.meta
+          projectPath: Assets\Prefabs\Card3.prefab.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Prefabs\Card4.prefab
+          fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Prefabs\Card4.prefab
+          projectPath: Assets\Prefabs\Card4.prefab
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Prefabs\Card4.prefab.meta
+          fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Prefabs\Card4.prefab.meta
+          projectPath: Assets\Prefabs\Card4.prefab.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Prefabs\Card5.prefab
+          fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Prefabs\Card5.prefab
+          projectPath: Assets\Prefabs\Card5.prefab
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Prefabs\Card5.prefab.meta
+          fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Prefabs\Card5.prefab.meta
+          projectPath: Assets\Prefabs\Card5.prefab.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Prefabs\Card6.prefab
+          fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Prefabs\Card6.prefab
+          projectPath: Assets\Prefabs\Card6.prefab
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Prefabs\Card6.prefab.meta
+          fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Prefabs\Card6.prefab.meta
+          projectPath: Assets\Prefabs\Card6.prefab.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Prefabs\GameManager.prefab
+          fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Prefabs\GameManager.prefab
+          projectPath: Assets\Prefabs\GameManager.prefab
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Prefabs\GameManager.prefab.meta
+          fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Prefabs\GameManager.prefab.meta
+          projectPath: Assets\Prefabs\GameManager.prefab.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Scenes\SampleScene.unity
+          fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Scenes\SampleScene.unity
+          projectPath: Assets\Scenes\SampleScene.unity
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Scripts.meta
+          fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Scripts.meta
+          projectPath: Assets\Scripts.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Scripts\BoardManager.cs
+          fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Scripts\BoardManager.cs
+          projectPath: Assets\Scripts\BoardManager.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Scripts\BoardManager.cs.meta
+          fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Scripts\BoardManager.cs.meta
+          projectPath: Assets\Scripts\BoardManager.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Scripts\GameManager.cs
+          fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Scripts\GameManager.cs
+          projectPath: Assets\Scripts\GameManager.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Scripts\GameManager.cs.meta
+          fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Scripts\GameManager.cs.meta
+          projectPath: Assets\Scripts\GameManager.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Scripts\Loader.cs
+          fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Scripts\Loader.cs
+          projectPath: Assets\Scripts\Loader.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Scripts\Loader.cs.meta
+          fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Scripts\Loader.cs.meta
+          projectPath: Assets\Scripts\Loader.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Scripts\ObjectClick.cs
+          fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Scripts\ObjectClick.cs
+          projectPath: Assets\Scripts\ObjectClick.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Scripts\ObjectClick.cs.meta
+          fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Scripts\ObjectClick.cs.meta
+          projectPath: Assets\Scripts\ObjectClick.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Sprites.meta
+          fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Sprites.meta
+          projectPath: Assets\Sprites.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Sprites\Card1.png
+          fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Sprites\Card1.png
+          projectPath: Assets\Sprites\Card1.png
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Sprites\Card1.png.meta
+          fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Sprites\Card1.png.meta
+          projectPath: Assets\Sprites\Card1.png.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Sprites\Card2.png
+          fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Sprites\Card2.png
+          projectPath: Assets\Sprites\Card2.png
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Sprites\Card2.png.meta
+          fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Sprites\Card2.png.meta
+          projectPath: Assets\Sprites\Card2.png.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Sprites\Card3.png
+          fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Sprites\Card3.png
+          projectPath: Assets\Sprites\Card3.png
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Sprites\Card3.png.meta
+          fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Sprites\Card3.png.meta
+          projectPath: Assets\Sprites\Card3.png.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Sprites\Card4.png
+          fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Sprites\Card4.png
+          projectPath: Assets\Sprites\Card4.png
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Sprites\Card4.png.meta
+          fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Sprites\Card4.png.meta
+          projectPath: Assets\Sprites\Card4.png.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Sprites\Card5.png
+          fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Sprites\Card5.png
+          projectPath: Assets\Sprites\Card5.png
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Sprites\Card5.png.meta
+          fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Sprites\Card5.png.meta
+          projectPath: Assets\Sprites\Card5.png.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Sprites\Card6.png
+          fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Sprites\Card6.png
+          projectPath: Assets\Sprites\Card6.png
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Sprites\Card6.png.meta
+          fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Sprites\Card6.png.meta
+          projectPath: Assets\Sprites\Card6.png.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\ProjectSettings.asset
+          fullPath: C:\DSA\Projecte\Empareja_y_Despeja\ProjectSettings\ProjectSettings.asset
+          projectPath: ProjectSettings\ProjectSettings.asset
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: ProjectSettings\SceneTemplateSettings.json
+          fullPath: C:\DSA\Projecte\Empareja_y_Despeja\ProjectSettings\SceneTemplateSettings.json
+          projectPath: ProjectSettings\SceneTemplateSettings.json
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: UserSettings\Layouts\default-2021.dwlt
+          fullPath: C:\DSA\Projecte\Empareja_y_Despeja\UserSettings\Layouts\default-2021.dwlt
+          projectPath: UserSettings\Layouts\default-2021.dwlt
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+      - commitID: 534f93886557bf99f29abed4edd387fc2b7d668b
+        mergeA: 
+        mergeB: 
+        authorName: paufeixa
+        authorEmail: paufeixa20019@gmail.com
+        commitEmail: paufeixa20019@gmail.com
+        commitName: paufeixa
+        summary: Initial Commit
+        description: 
+        timeString: 2023-01-03T10:58:24.000+01:00
+        commitTimeString: 2023-01-03T10:58:24.000+01:00
+        changes:
+        - path: Assets\Scenes.meta
+          fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Scenes.meta
+          projectPath: Assets\Scenes.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Scenes\SampleScene.unity
+          fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Scenes\SampleScene.unity
+          projectPath: Assets\Scenes\SampleScene.unity
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Scenes\SampleScene.unity.meta
+          fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Assets\Scenes\SampleScene.unity.meta
+          projectPath: Assets\Scenes\SampleScene.unity.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\manifest.json
+          fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Packages\manifest.json
+          projectPath: Packages\manifest.json
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\packages-lock.json
+          fullPath: C:\DSA\Projecte\Empareja_y_Despeja\Packages\packages-lock.json
+          projectPath: Packages\packages-lock.json
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\AudioManager.asset
+          fullPath: C:\DSA\Projecte\Empareja_y_Despeja\ProjectSettings\AudioManager.asset
+          projectPath: ProjectSettings\AudioManager.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\ClusterInputManager.asset
+          fullPath: C:\DSA\Projecte\Empareja_y_Despeja\ProjectSettings\ClusterInputManager.asset
+          projectPath: ProjectSettings\ClusterInputManager.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\DynamicsManager.asset
+          fullPath: C:\DSA\Projecte\Empareja_y_Despeja\ProjectSettings\DynamicsManager.asset
+          projectPath: ProjectSettings\DynamicsManager.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\EditorBuildSettings.asset
+          fullPath: C:\DSA\Projecte\Empareja_y_Despeja\ProjectSettings\EditorBuildSettings.asset
+          projectPath: ProjectSettings\EditorBuildSettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\EditorSettings.asset
+          fullPath: C:\DSA\Projecte\Empareja_y_Despeja\ProjectSettings\EditorSettings.asset
+          projectPath: ProjectSettings\EditorSettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\GraphicsSettings.asset
+          fullPath: C:\DSA\Projecte\Empareja_y_Despeja\ProjectSettings\GraphicsSettings.asset
+          projectPath: ProjectSettings\GraphicsSettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\InputManager.asset
+          fullPath: C:\DSA\Projecte\Empareja_y_Despeja\ProjectSettings\InputManager.asset
+          projectPath: ProjectSettings\InputManager.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\MemorySettings.asset
+          fullPath: C:\DSA\Projecte\Empareja_y_Despeja\ProjectSettings\MemorySettings.asset
+          projectPath: ProjectSettings\MemorySettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\NavMeshAreas.asset
+          fullPath: C:\DSA\Projecte\Empareja_y_Despeja\ProjectSettings\NavMeshAreas.asset
+          projectPath: ProjectSettings\NavMeshAreas.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\NetworkManager.asset
+          fullPath: C:\DSA\Projecte\Empareja_y_Despeja\ProjectSettings\NetworkManager.asset
+          projectPath: ProjectSettings\NetworkManager.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\PackageManagerSettings.asset
+          fullPath: C:\DSA\Projecte\Empareja_y_Despeja\ProjectSettings\PackageManagerSettings.asset
+          projectPath: ProjectSettings\PackageManagerSettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\Physics2DSettings.asset
+          fullPath: C:\DSA\Projecte\Empareja_y_Despeja\ProjectSettings\Physics2DSettings.asset
+          projectPath: ProjectSettings\Physics2DSettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\PresetManager.asset
+          fullPath: C:\DSA\Projecte\Empareja_y_Despeja\ProjectSettings\PresetManager.asset
+          projectPath: ProjectSettings\PresetManager.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\ProjectSettings.asset
+          fullPath: C:\DSA\Projecte\Empareja_y_Despeja\ProjectSettings\ProjectSettings.asset
+          projectPath: ProjectSettings\ProjectSettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\ProjectVersion.txt
+          fullPath: C:\DSA\Projecte\Empareja_y_Despeja\ProjectSettings\ProjectVersion.txt
+          projectPath: ProjectSettings\ProjectVersion.txt
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\QualitySettings.asset
+          fullPath: C:\DSA\Projecte\Empareja_y_Despeja\ProjectSettings\QualitySettings.asset
+          projectPath: ProjectSettings\QualitySettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\TagManager.asset
+          fullPath: C:\DSA\Projecte\Empareja_y_Despeja\ProjectSettings\TagManager.asset
+          projectPath: ProjectSettings\TagManager.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\TimeManager.asset
+          fullPath: C:\DSA\Projecte\Empareja_y_Despeja\ProjectSettings\TimeManager.asset
+          projectPath: ProjectSettings\TimeManager.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\UnityConnectSettings.asset
+          fullPath: C:\DSA\Projecte\Empareja_y_Despeja\ProjectSettings\UnityConnectSettings.asset
+          projectPath: ProjectSettings\UnityConnectSettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\VFXManager.asset
+          fullPath: C:\DSA\Projecte\Empareja_y_Despeja\ProjectSettings\VFXManager.asset
+          projectPath: ProjectSettings\VFXManager.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\VersionControlSettings.asset
+          fullPath: C:\DSA\Projecte\Empareja_y_Despeja\ProjectSettings\VersionControlSettings.asset
+          projectPath: ProjectSettings\VersionControlSettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\XRSettings.asset
+          fullPath: C:\DSA\Projecte\Empareja_y_Despeja\ProjectSettings\XRSettings.asset
+          projectPath: ProjectSettings\XRSettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\boot.config
+          fullPath: C:\DSA\Projecte\Empareja_y_Despeja\ProjectSettings\boot.config
+          projectPath: ProjectSettings\boot.config
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: UserSettings\EditorUserSettings.asset
+          fullPath: C:\DSA\Projecte\Empareja_y_Despeja\UserSettings\EditorUserSettings.asset
+          projectPath: UserSettings\EditorUserSettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: UserSettings\Layouts\default-2021.dwlt
+          fullPath: C:\DSA\Projecte\Empareja_y_Despeja\UserSettings\Layouts\default-2021.dwlt
+          projectPath: UserSettings\Layouts\default-2021.dwlt
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: UserSettings\Search.settings
+          fullPath: C:\DSA\Projecte\Empareja_y_Despeja\UserSettings\Search.settings
+          projectPath: UserSettings\Search.settings
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
       - commitID: e2ee5de737558b13c5f5c59205e2410822f130ab
         mergeA: 
         mergeB: 
@@ -1021,13 +2038,13 @@ MonoBehaviour:
     m_Image: {fileID: 0}
     m_Tooltip: Url of the origin remote
   lastCurrentBranchAndRemoteChangedEvent:
-    updatedTimeString: 2023-01-05T09:44:37.596+01:00
+    updatedTimeString: 2023-01-08T11:33:15.662+01:00
     cacheType: 1
   lastTrackingStatusChangedEvent:
-    updatedTimeString: 2023-01-05T10:02:09.389+01:00
+    updatedTimeString: 2023-01-08T11:33:18.729+01:00
     cacheType: 5
   lastStatusEntriesChangedEvent:
-    updatedTimeString: 2023-01-05T10:02:09.103+01:00
+    updatedTimeString: 2023-01-08T11:33:18.632+01:00
     cacheType: 6
   pullButtonContent:
     m_Text: Pull
@@ -1073,7 +2090,7 @@ MonoBehaviour:
     x: 0
     y: 451.33334
     width: 977
-    height: 187.66672
+    height: 187.66666
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -1091,21 +2108,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Prefabs
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Prefabs
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\DSA\Projecte\Empareja_y_Despeja
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 58620000
-    m_LastClickedID: 25176
+    m_SelectedIDs: 52620000
+    m_LastClickedID: 25170
     m_ExpandedIDs: 000000004a62000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1161,7 +2178,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c623000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1213,7 +2230,7 @@ MonoBehaviour:
     x: 978
     y: 72.66667
     width: 301
-    height: 566.3334
+    height: 566.3333
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -1264,7 +2281,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: a221ffffe4a3ffffc0e6ffff26fbffff
+      m_ExpandedIDs: 26fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1408,7 +2425,7 @@ MonoBehaviour:
       containerId: overlay-container--right
       floating: 1
       collapsed: 0
-      displayed: 1
+      displayed: 0
       snapOffset: {x: -168.66669, y: -94.66666}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 3
@@ -1568,9 +2585,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1.3535686, y: -0.12829664, z: 0.025865119}
+    m_Target: {x: -1.3417875, y: 3.0860748, z: -0.05971706}
     speed: 2
-    m_Value: {x: 1.3535686, y: -0.12829664, z: 0.025865119}
+    m_Value: {x: 3.1466553, y: 3.8523765, z: 0.021195926}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1621,9 +2638,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 5.9291763
+    m_Target: 6.4748087
     speed: 2
-    m_Value: 5.9291763
+    m_Value: 0.8660254
   m_Ortho:
     m_Target: 1
     speed: 2

@@ -2,6 +2,8 @@ using UnityEngine;
 using System;
 using System.Collections.Generic;
 using Random = UnityEngine.Random;
+using TMPro;
+using UnityEngine.UI;
 
 public class BoardManager : MonoBehaviour
 {
@@ -9,6 +11,21 @@ public class BoardManager : MonoBehaviour
     public int rows = 8;
     public GameObject[] cards;
 
+    private TMP_Text totalCardsText;
+    private TMP_Text remainingCardsText;
+    private TMP_Text card1Text;
+    private int remainingCards1;
+    private TMP_Text card2Text;
+    private int remainingCards2;
+    private TMP_Text card3Text;
+    private int remainingCards3;
+    private TMP_Text card4Text;
+    private int remainingCards4;
+    private TMP_Text card5Text;
+    private int remainingCards5;
+    private TMP_Text card6Text;
+    private int remainingCards6;
+    private GameObject endGame;
     private List<Sprite> displayedCards = new List<Sprite>();
     private Transform boardHolder;
     private List<Vector3> gridPositions = new List<Vector3>();
@@ -60,6 +77,30 @@ public class BoardManager : MonoBehaviour
                 instance.transform.SetParent(boardHolder);
             }
         }
+        endGame = GameObject.Find("EndGame");
+        endGame.SetActive(false);
+        totalCardsText = GameObject.Find("TotalCards").GetComponent<TextMeshProUGUI>();
+        totalCardsText.text = "Total cards: " + cardsCount;
+        remainingCardsText = GameObject.Find("RemainingCards").GetComponent<TextMeshProUGUI>();
+        remainingCardsText.text = "Remaining cards: " + displayedCards.Count;
+        remainingCards1 = (cardsCount / cards.Length);
+        remainingCards2 = (cardsCount / cards.Length);
+        remainingCards3 = (cardsCount / cards.Length);
+        remainingCards4 = (cardsCount / cards.Length);
+        remainingCards5 = (cardsCount / cards.Length);
+        remainingCards6 = (cardsCount / cards.Length);
+        card1Text = GameObject.Find("RemainingCards1").GetComponent<TextMeshProUGUI>();
+        card1Text.text = "Remaining cards of type 1: " + remainingCards1;
+        card2Text = GameObject.Find("RemainingCards2").GetComponent<TextMeshProUGUI>();
+        card2Text.text = "Remaining cards of type 2: " + remainingCards2;
+        card3Text = GameObject.Find("RemainingCards3").GetComponent<TextMeshProUGUI>();
+        card3Text.text = "Remaining cards of type 3: " + remainingCards3;
+        card4Text = GameObject.Find("RemainingCards4").GetComponent<TextMeshProUGUI>();
+        card4Text.text = "Remaining cards of type 4: " + remainingCards4;
+        card5Text = GameObject.Find("RemainingCards5").GetComponent<TextMeshProUGUI>();
+        card5Text.text = "Remaining cards of type 5: " + remainingCards5;
+        card6Text = GameObject.Find("RemainingCards6").GetComponent<TextMeshProUGUI>();
+        card6Text.text = "Remaining cards of type 6: " + remainingCards6;
     }
 
     public void SetupScene()
@@ -84,6 +125,43 @@ public class BoardManager : MonoBehaviour
     {
         int index1 = gridPositions.IndexOf(position1);
         int index2 = gridPositions.IndexOf(position2);
+        Sprite card = displayedCards[index1];
+        int k = 0;
+        bool found = false;
+        while (k < cards.Length && !found)
+        {
+            if (card == cards[k].GetComponent<SpriteRenderer>().sprite)
+                found = true;
+            else
+                k++;
+        }
+        switch (k)
+        {
+            case 0:
+                remainingCards1 = remainingCards1 - 2;
+                card1Text.text = "Remaining cards of type 1: " + remainingCards1;
+                break;
+            case 1:
+                remainingCards2 = remainingCards2 - 2;
+                card2Text.text = "Remaining cards of type 2: " + remainingCards2;
+                break;
+            case 2:
+                remainingCards3 = remainingCards3 - 2;
+                card3Text.text = "Remaining cards of type 3: " + remainingCards3;
+                break;
+            case 3:
+                remainingCards4 = remainingCards4 - 2;
+                card4Text.text = "Remaining cards of type 4: " + remainingCards4;
+                break;
+            case 4:
+                remainingCards5 = remainingCards5 - 2;
+                card5Text.text = "Remaining cards of type 5: " + remainingCards5;
+                break;
+            case 5:
+                remainingCards6 = remainingCards6 - 2;
+                card6Text.text = "Remaining cards of type 6: " + remainingCards6;
+                break;
+        }
         if (index1 > index2)
         {
             displayedCards.RemoveAt(index1);
@@ -101,7 +179,7 @@ public class BoardManager : MonoBehaviour
         for (int i = 0; i < gridPositions.Count; i++)
         {
             int x = 0;
-            bool found = false;
+            found = false;
             while (x < cards.Length && !found)
             {
                 if (cards[x].GetComponent<SpriteRenderer>().sprite == displayedCards[i])
@@ -114,6 +192,10 @@ public class BoardManager : MonoBehaviour
                 x++;
             }
         }
+        totalCardsText.text = "Total cards: " + (rows*columns);
+        remainingCardsText.text = "Remaining cards: " + displayedCards.Count;
+        if (displayedCards.Count == 0)
+            endGame.SetActive(true);
     }
 
     void Start()
