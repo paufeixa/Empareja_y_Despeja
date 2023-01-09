@@ -121,6 +121,27 @@ public class BoardManager : MonoBehaviour
             return false;
     }
 
+    public bool Solution()
+    {
+        int i = 0;
+        bool found = false;
+        while (i < displayedCards.Count && !found)
+        {
+            int k = 1;
+            while (k < displayedCards.Count && !found)
+            {
+                if (displayedCards[i] == displayedCards[k])
+                {
+                    if (Near(gridPositions[i], gridPositions[k]))
+                        found = true;
+                }
+                k++;
+            }
+            i++;
+        }
+        return found;
+    }
+
     public void BoardUpdate(Vector3 position1, Vector3 position2)
     {
         int index1 = gridPositions.IndexOf(position1);
@@ -196,6 +217,12 @@ public class BoardManager : MonoBehaviour
         remainingCardsText.text = "Remaining cards: " + displayedCards.Count;
         if (displayedCards.Count == 0)
             endGame.SetActive(true);
+        else if (!Solution())
+        {
+            TMP_Text endGameText = endGame.GetComponent<TextMeshProUGUI>();
+            endGameText.text = "You have lost the game";
+            endGame.SetActive(true);
+        }
     }
 
     void Start()
